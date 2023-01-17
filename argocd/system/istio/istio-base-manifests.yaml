@@ -1,0 +1,20 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: istio-system-manifests
+  namespace: argocd
+  labels:
+    scope: system
+spec:
+  destination:
+    namespace: istio-system
+    server: https://kubernetes.default.svc
+  project: system
+  source:
+    path: istio-base
+    repoURL: ssh://git@gitlab.lipstack.sephoraus.com:2222/kubernetes/k8s-state/system/eus1-plat-devqa.git
+    targetRevision: HEAD
+  syncPolicy:
+    automated:
+      prune: true
