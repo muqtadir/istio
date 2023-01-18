@@ -1,0 +1,20 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: istio-base-manifests
+  namespace: argocd
+  labels:
+    scope: system
+spec:
+  destination:
+    namespace: istio-system
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: istio-base
+    repoURL: https://github.com/muqtadir/istio.git
+    targetRevision: HEAD
+  syncPolicy:
+    automated:
+      prune: true
