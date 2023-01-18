@@ -1,4 +1,15 @@
 resources:
 - ../base/istio-istiod
+- ./kustomize-config.yaml
 patchesStrategicMerge:
 - istio-istiod.yaml
+configurations:
+  - kustomize-reference.yaml
+vars:
+  - name: ISTIO_MESH_ID
+    objref:
+      apiVersion: v1
+      kind: ConfigMap
+      name: istio-kustomize-config
+    fieldref:
+      fieldpath: data.MESH_ID

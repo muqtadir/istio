@@ -9,6 +9,9 @@ spec:
   source:
     targetRevision: 1.16.1
     helm:
+      parameters:
+        - name: global.proxy.meshID
+          value: "$(ISTIO_MESH_ID)"
       values: |
         ## Discovery Settings
         pilot:
@@ -134,7 +137,7 @@ spec:
           #         hello: world
           #
           # defaultTemplates: ["sidecar", "hello"]
-          defaultTemplates: []
+          defaultTemplates: ["sidecar"]
         istiodRemote:
           # Sidecar injector mutating webhook configuration clientConfig.url value.
           # For example: https://$remotePilotAddress:15017/inject
@@ -429,7 +432,7 @@ spec:
           # If the mesh admin does not specify a value, Istio will use the value of the
           # mesh's Trust Domain. The best practice is to select a proper Trust Domain
           # value.
-          meshID: ""
+          meshID: "${ISTIO_MESH_ID}"
 
           # Configure the mesh networks to be used by the Split Horizon EDS.
           #
