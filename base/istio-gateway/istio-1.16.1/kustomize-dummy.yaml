@@ -1,6 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: istio-kustomize-config-dummy
-data:
-  DUMMY: mcp
