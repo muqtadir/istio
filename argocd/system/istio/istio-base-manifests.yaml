@@ -13,7 +13,7 @@ spec:
   project: default
   source:
     path: istio-base
-    repoURL: git@github.com:muqtadir/istio.git
+    repoURL: https://github.com/muqtadir/istio.git
     targetRevision: HEAD
   syncPolicy:
     automated:
