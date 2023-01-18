@@ -15,7 +15,6 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     repoURL: 'https://istio-release.storage.googleapis.com/charts'
-    targetRevision: 1.16.1
     chart: base
   ignoreDifferences:
     - group: admissionregistration.k8s.io
