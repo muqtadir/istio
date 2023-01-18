@@ -9,5 +9,5 @@ spec:
   source:
     targetRevision: 1.16.1
     helm:
-      valueFiles::
+      valueFiles:
         - values.yaml
