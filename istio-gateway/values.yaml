@@ -3,7 +3,7 @@
 
 gateways:
   istio-ingressgateway:
-    name: istio-ingressgateway
+  - name: istio-ingressgateway
     labels:
       app: istio-ingressgateway
       istio: ingressgateway
@@ -108,8 +108,7 @@ gateways:
     # The injection template to use for the gateway. If not set, no injection will be performed.
     injectionTemplate: ""
 
-  istio-ingressgateway:
-    name: istio-bot
+  - name: istio-bot
     labels:
       app: istio-ingressgateway
       istio: istio-bot
