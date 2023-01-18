@@ -3,4 +3,4 @@ kind: Kustomization
 
 resources:
   - files/gen-istio-cluster.yaml
-#  - istio-base.yaml
+  - istio-base.yaml
