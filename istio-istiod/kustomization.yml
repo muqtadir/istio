@@ -1,5 +1,5 @@
 resources:
-- ../base/istio-istiod/istio-1.14.6
+- ../base/istio-istiod/istio-1.16.1
 - ./kustomize-config.yaml
 patchesStrategicMerge:
 #- istio-istiod.yaml
