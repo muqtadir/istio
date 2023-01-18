@@ -14,8 +14,7 @@ spec:
     namespace: istio-system
     server: 'https://kubernetes.default.svc'
   source:
-    repoURL: 'https://istio-release.storage.googleapis.com/charts'
-    chart: base
+    repoURL: 'https://github.com/muqtadir/istio'
   ignoreDifferences:
     - group: admissionregistration.k8s.io
       kind: MutatingWebhookConfiguration
