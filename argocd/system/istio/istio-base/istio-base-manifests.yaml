@@ -12,7 +12,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: istio-base
+    path: istio-base/istio-1.16.1
     repoURL: https://github.com/muqtadir/istio.git
     targetRevision: HEAD
   syncPolicy:
