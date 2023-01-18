@@ -2,7 +2,7 @@ resources:
 - ../base/istio-istiod
 - ./kustomize-config.yaml
 patchesStrategicMerge:
-- istio-istiod.yaml
+#- istio-istiod.yaml
 configurations:
   - kustomize-reference.yaml
 vars:
