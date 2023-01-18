@@ -7,7 +7,7 @@ metadata:
     scope: system
 spec:
   source:
-    targetRevision: 1.13.5
+    targetRevision: 1.14.6
     helm:
       parameters:
         - name: global.proxy.meshID
