@@ -1,5 +1,0 @@
-varReference:
-- kind: Application
-  path: spec/source/helm/values
-- kind: Application
-  path: spec/source/helm/parameters[]/value
