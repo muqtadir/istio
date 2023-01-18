@@ -10,7 +10,7 @@ spec:
   destination:
     namespace: istio-system
     server: https://kubernetes.default.svc
-  project: system
+  project: default
   source:
     path: istio-base
     repoURL: git@github.com:muqtadir/istio.git
