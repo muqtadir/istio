@@ -149,7 +149,7 @@ spec:
           # Override to pass env variables, for example: /inject/cluster/remote/net/network2
           injectionPath: "/inject"
         telemetry:
-          enabled: true
+          enabled: false
           v2:
             # For Null VM case now.
             # This also enables metadata exchange.
@@ -432,7 +432,7 @@ spec:
           # If the mesh admin does not specify a value, Istio will use the value of the
           # mesh's Trust Domain. The best practice is to select a proper Trust Domain
           # value.
-          meshID: "${ISTIO_MESH_ID}"
+          meshID: ""
 
           # Configure the mesh networks to be used by the Split Horizon EDS.
           #
