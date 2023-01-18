@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: istio-system-manifests
+  name: istio-base-manifests
   namespace: argocd
   labels:
     scope: system
