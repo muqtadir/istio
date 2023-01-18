@@ -13,7 +13,7 @@ spec:
   project: system
   source:
     path: istio-base
-    repoURL: ssh://git@gitlab.lipstack.sephoraus.com:2222/kubernetes/k8s-state/system/eus1-plat-devqa.git
+    repoURL: git@github.com:muqtadir/istio.git
     targetRevision: HEAD
   syncPolicy:
     automated:
