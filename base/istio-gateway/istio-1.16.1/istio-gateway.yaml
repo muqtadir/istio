@@ -28,6 +28,4 @@ spec:
           - /webhooks/0/failurePolicy
   project: istio
   syncPolicy:
-    automated:
-      prune: false
-      selfHeal: false
+    automated: {}
