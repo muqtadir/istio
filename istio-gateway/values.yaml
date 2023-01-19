@@ -110,7 +110,7 @@ gateways:
   istio-bot:
     name: istio-bot
     labels:
-      app: istio-ingressgateway
+      app: istio-bot
       istio: istio-bot
     ports:
     ## You can add custom gateway ports in user values overrides, but it must include those ports since helm replaces.
