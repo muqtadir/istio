@@ -1,4 +1,4 @@
-{{- $gateway := index .Values "gateways" "istio-ingressgateway" }}
+{{- $gateway := index .Values "gateways" "istio-ingressgateway" "istio-bot" }}
 {{- if ne $gateway.injectionTemplate "" }}
 {{/* This provides a minimal gateway, ready to be injected.
      Any settings from values.gateways should be here - these are options specific to the gateway.
