@@ -16,12 +16,12 @@ gateways:
       targetPort: 15021
       name: status-port
       protocol: TCP
-    - port: 80
-      targetPort: 8080
+    - port: 8080
+      targetPort: 80
       name: http2
       protocol: TCP
-    - port: 443
-      targetPort: 8443
+    - port: 4443
+      targetPort: 443
       name: https
       protocol: TCP
 
