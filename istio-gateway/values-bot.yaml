@@ -1,5 +1,5 @@
 # Name allows overriding the release name. Generally this should not be set
-name: "istio-ingress"
+name: "istio-bot"
 # revision declares which revision this gateway is a part of
 revision: ""
 
@@ -75,7 +75,7 @@ env: {}
 
 # Labels to apply to all resources
 labels:
-  istio: istio-ingress
+  istio: istio-bot
 
 # Annotations to apply to all resources
 annotations: {}

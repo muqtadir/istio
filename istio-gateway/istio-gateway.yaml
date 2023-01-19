@@ -11,3 +11,4 @@ spec:
     helm:
       valueFiles:
         - values.yaml
+        - values-bot.yaml
